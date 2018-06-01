@@ -1,0 +1,29 @@
+<form novalidate [formGroup]="registrationForm" class="form">
+
+  <fieldset formGroupName="name" class="form-part">
+      <div class="form-item">
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" class="form-input" formControlName="firstName" required>
+      </div>
+      <div class="form-item">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" class="form-input" formControlName="lastName" required>
+      </div>
+      <button class="btn" (click)="ok()" [disabled]="registrationForm.controls.name.invalid">OK</button>
+  </fieldset>
+
+  <fieldset formGroupName="social" class="form-part">
+    <div class="form-item">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" class="form-input" formControlName="email" required>
+    </div>
+    <div class="form-item">
+      <label for="password">Password</label>
+      <input id="password" type="password" class="form-input" formControlName="password" required>
+    </div>
+    <button class="btn" (click)="ok()" [disabled]="registrationForm.controls.social.invalid">OK</button>
+  </fieldset>
+
+  <button class="btn" (click)="ok()" [disabled]="registrationForm.controls.name.invalid || registrationForm.controls.social.invalid">OK</button>
+
+</form>

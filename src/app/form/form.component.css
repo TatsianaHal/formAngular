@@ -1,0 +1,58 @@
+.form {
+    padding: 10px;
+
+    color: gray;
+
+    background-color: #e6eeff;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.form-part, input {
+    background-color: #e6eeff;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+input.ng-touched.ng-invalid {
+    border-color: red;
+}
+
+label {
+    font-size: 10px;
+    background-color: #e6eeff;
+}
+
+label, input {
+    display: block;
+}
+
+button {
+    color: white;
+    font-size: 12px;
+
+    background-color: #5669E0;
+    border: 1px solid #99bbff;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #99bbff;
+}
+
+.form-part {
+    display: flex;
+
+    margin-bottom: 10px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    background-color: #e6eeff;
+
+}
